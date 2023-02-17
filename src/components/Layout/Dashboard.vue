@@ -15,24 +15,24 @@
                 <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start " id="menu">
                     <li class="nav-item">
                         <a href="#" class="nav-link align-middle px-0">
-                            <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline"><router-link class="text-decoration-none text-dark fs-5" to="/">Dashboard</router-link> </span>
+                           <span class="ms-1 d-none d-sm-inline"><router-link class="text-decoration-none text-dark fs-5" to="/">Dashboard</router-link> </span>
                         </a>
                     </li>
                     <li>
                         <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline"><router-link class="text-decoration-none text-dark fs-5" to="/product">Product</router-link></span> </a>
+                           <span class="ms-1 d-none d-sm-inline"><router-link class="text-decoration-none text-dark fs-5" to="/product">Products</router-link></span> </a>
                         <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                             <li class="w-100">
                                 <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline"><router-link class="text-decoration-none text-dark fs-5" to="/product">User Profile</router-link></span></a>
                             </li>
                             <li>
-                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-black"> <router-link class="text-decoration-none text-dark fs-5" to="/product"> Table</router-link></span></a>
+                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline text-black"> <router-link class="text-decoration-none text-dark fs-5" to="/tabel">Tables</router-link></span></a>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" class="nav-link px-0 align-middle">
-                            <i class="fs-4 bi-table"></i> <span class="d-none d-sm-inline"><router-link class="text-decoration-none text-dark fs-5" to="/locations">Locations</router-link></span></a>
+                            <span class="d-none d-sm-inline"><router-link class="text-decoration-none text-dark fs-5" to="/locations"> Locations</router-link></span></a>
                     </li>
                    
                   

@@ -9,6 +9,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     items: {},
+    user: {},
   },
   getters: {
 
@@ -21,9 +22,11 @@ export default new Vuex.Store({
       const index = state.items.products.findIndex(i => i.id === id);
       console.log(index);
       state.items.products.splice(index, 1);
-      // const itemsArray = Object.values(state.items);
-      // return itemsArray.filter(item => item.id !== id);
-      // state.items = state.items.splice(id, 1);
+      
+    },
+    //user get 
+    GET_DATA_USER(state, user) {
+      state.user = user
     },
 
   },
@@ -42,6 +45,18 @@ export default new Vuex.Store({
     async deleteData({ commit }, id) {
       await axios.delete('https://dummyjson.com/products/' + id)
       commit('DELETE_DATA', id);
+    },
+    //getdata user
+    async getDataUser({ commit }) {
+      await axios.get('https://dummyjson.com/users')
+        .then(response => response.data)
+        .then(user => {
+
+          commit('GET_DATA_USER', user)
+        }).catch((error) => {
+          alert(error);
+          console.log(error);
+        })
     },
 
   },
