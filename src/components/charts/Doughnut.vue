@@ -1,7 +1,7 @@
 <template>
     <div
       class="chart-container"
-      style="width:300px; height:300px; "
+      style="width:500px; height:400px; margin-left: 60px; "
     >
       <canvas id="myChartDoughnut" class="chart"></canvas>
     </div>
@@ -15,17 +15,19 @@
       const myChart = new Chart(ctx, {
         type: "doughnut",
         data: {
-          labels: ["Coding", "Eat", "Sleeping", "Meditation", "The fight against evil"],
+          labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
           datasets: [
             {
       
-              data: [60, 20, 10, 5, 5,],
+              data: [40, 80, 50, 30, 60,75,90],
               backgroundColor: [
-                "rgba(54, 162, 235)",
-                "rgba(255,128,0)",
-                "rgba(255,0,0)",
-                "rgba((47,79,79)",
-                "rgba(178,34,34)",
+                "#FFD400",
+                "#ff7d00",
+                "#ff0022",
+                "#0047ff",
+                "#3200ff",
+                "#74ff00",
+                "#00d2ff"
               
               ],
               borderWidth: 1,

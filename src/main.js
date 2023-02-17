@@ -12,11 +12,11 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 //font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faTrash, faArrowUp, faUser, faTableColumns  } from '@fortawesome/free-solid-svg-icons'
+import { faTrash, faArrowUp, faUser, faCoins, faWallet,faCartShopping,faCircleUser } from '@fortawesome/free-solid-svg-icons'
 //VueGoogleMaps
 import * as VueGoogleMaps from "vue2-google-maps" 
 //font awesome
-library.add(faTrash, faArrowUp, faUser, faTableColumns)
+library.add(faTrash, faArrowUp, faUser, faCoins, faWallet,faCartShopping, faCircleUser)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 //bootstrap-vue
 Vue.use(BootstrapVue)

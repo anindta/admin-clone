@@ -41,7 +41,7 @@
                
             </div>
         </div>
-        <div class="col py-3 "  style="margin-left:17%;">
+        <div class="col py-3 "  style="margin-left:17%; background-color: #DDDDDD;">
               <!--navbar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top  shadow mb-4">
         <div class="container-fluid">
@@ -50,7 +50,7 @@
         
             <div class="navbar-nav ms-auto">
             
-              <a href="" class="nav-item nav-link text-black"><font-awesome-icon icon="fa-solid fa-user fa-2x" /></a>
+              <a href="" class="nav-item nav-link text-black"><font-awesome-icon class=" fa-2x" icon="fa-solid fa-circle-user" /></a>
             </div>
           </div>
         </div>
