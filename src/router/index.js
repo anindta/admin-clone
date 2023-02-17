@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import Login from '../components/Layout/Login.vue'
 import Dashboard from '../components/Layout/Dashboard.vue'
+import LocationsView from '../views/LocationView.vue'
 
 
 Vue.use(VueRouter)
@@ -27,6 +28,12 @@ const routes = [
         path: '/product',
         name: 'product',
         component: AboutView
+
+      },
+      {
+        path: '/locations',
+        name: 'locations',
+        component: LocationsView
 
       }
     ]

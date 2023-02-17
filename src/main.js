@@ -17,10 +17,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faTrash, faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faTrash, faArrowUp, faUser, faTableColumns  } from '@fortawesome/free-solid-svg-icons'
 //font awesome
 /* add icons to the library */
-library.add(faTrash, faArrowUp)
+library.add(faTrash, faArrowUp, faUser, faTableColumns)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
