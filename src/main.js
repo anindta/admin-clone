@@ -10,23 +10,24 @@ import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 //font awesome
-/* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
-
-/* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-
-/* import specific icons */
 import { faTrash, faArrowUp, faUser, faTableColumns  } from '@fortawesome/free-solid-svg-icons'
+//VueGoogleMaps
+import * as VueGoogleMaps from "vue2-google-maps" 
 //font awesome
-/* add icons to the library */
 library.add(faTrash, faArrowUp, faUser, faTableColumns)
-
-/* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 //bootstrap-vue
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
+//VueGoogleMaps 
+Vue.use(VueGoogleMaps, {
+  load: {
+    key: "AIzaSyCKe33yyvj0jUrzOwe3s6it6MJChJkC218",
+    libraries: "places"
+  }
+});
 
 Vue.config.productionTip = false
 
