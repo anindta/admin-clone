@@ -1,38 +1,24 @@
 <template>
   <div class="about">
-    
-    <div class="container">
-      <div class="row ">
-        <div
-          class="col-sm  text-center  shadow"
-          v-for="(item, index) in items.products"
-          :key="index"
-          id="product-gap"
-        >
-          <div class="p-2 g-col-4">
-            <h5 class="text-dark">{{item.title}}</h5></div
-          >
-          <div class="p-2 g-col-4">
-            <img :src="item.thumbnail" id="img" class="rounded mx-auto d-block"
-          /></div>
-          <div class="p-2 g-col-4"> ${{ item.price }}</div>
+    <div class="container overflow-hidden">
+      <p class="text-muted">Products</p>
+  <div class="row gy-5">
+    <div class="col-6" v-for="(item, index) in items.products"
+          :key="index">
+      <div class="p-3 bg-white shadow"> <h5 class="text-dark">{{item.title}}</h5><br>
+        <img :src="item.thumbnail" id="img" class="rounded mx-auto d-block"
+          /> <br>
+          <p>${{ item.price }}</p>
           <span>
             <button type="button" class="btn btn-danger" @click="deleteData(item.id)">
               <font-awesome-icon icon="fa-solid fa-trash" />
         </button>
-            
-            <!-- <button type="button"
-              class="btn btn-success btn-block mb-4 rounded mx-auto d-block"
-            >
-              <router-link class="text-decoration-none text-white" :to="{name:'detail', params:{id: product.id}}">BUY</router-link>
-             
-            </button> -->
-          </span>
-        </div>
-      </div>
+          </span></div>
+          
     </div>
-    <div class="p-2 g-col-4"><button><router-link class="text-decoration-none text-dark" to="/addData">Add Products </router-link> </button></div>
    
+  </div>
+</div>
   </div>
 </template>
 <script>
@@ -52,7 +38,7 @@ export default {
 <style scoped>
 
 #img {
-  width: 150px;
-  height: 100px;
+  width: 250px;
+  height: 200px;
 }
 </style>
