@@ -19,6 +19,13 @@
    
   </div>
 </div>
+
+<div class="container overflow-hidden mt-4">
+                <div class="row gy-5">
+                  <router-link class="text-decoration-none text-dark fs-5" to="/addproduct"><button class="col-6" type="button">  <div class="p-3 bg-white shadow" > <font-awesome-icon class="text-center" icon="fa-solid fa-plus" />
+                  <h2> add product</h2></div></button>
+                </router-link></div>
+              </div>
   </div>
 </template>
 <script>

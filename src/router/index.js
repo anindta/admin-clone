@@ -6,6 +6,8 @@ import Login from '../components/Layout/Login.vue'
 import Dashboard from '../components/Layout/Dashboard.vue'
 import LocationsView from '../views/LocationView.vue'
 import TabelView from '../views/TabelView.vue'
+import AddProduct from '../components/AddProduct.vue'
+import UserProfile from '../views/UserProfile.vue'
 
 
 Vue.use(VueRouter)
@@ -41,6 +43,18 @@ const routes = [
         path: '/locations',
         name: 'locations',
         component: LocationsView
+
+      },
+      {
+        path: '/user',
+        name: 'user',
+        component: UserProfile
+
+      },
+      {
+        path: '/addproduct',
+        name: 'addproduct',
+        component: AddProduct
 
       }
     ]

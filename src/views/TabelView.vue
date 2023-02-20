@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-1">
+  <div class="container px-5">
     <p class="text-muted">buyer Tables</p>
   <div class="row gx-5">
     <div class="col">
